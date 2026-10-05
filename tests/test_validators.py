@@ -79,4 +79,4 @@ def test_validar_personas_negativo():
 
 def test_validar_personas_no_entero():
     with pytest.raises(ValueError):
-        validar_personas(2.5)
+        validar_personas(2.5)  # type: ignore[arg-type]
